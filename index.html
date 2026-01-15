@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Fundamentals - Pseudo-classes & Elements</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Semantic Header -->
+    <header class="main-header" id="header">
+        <div class="container">
+            <h1 class="logo">CSS<span class="logo-highlight">Mastery</span></h1>
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#hero" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="#features" class="nav-link">Features</a></li>
+                    <li class="nav-item"><a href="#blog" class="nav-link">Blog</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Semantic Main -->
+    <main>
+        <!-- Section 1: Hero (CTA + Interaction) -->
+        <section class="hero-section" id="hero">
+            <div class="container hero-content">
+                <h2 class="hero-title">Mastering Pseudo-classes</h2>
+                <p class="hero-description">
+                    Unlock the full power of CSS with state-based styling and structural pseudo-classes. 
+                    Create interactive, accessible, and beautiful interfaces without JavaScript.
+                </p>
+                <div class="hero-actions">
+                    <button class="btn btn-primary">Get Started</button>
+                    <button class="btn btn-secondary">Learn More</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Features (Pseudo-elements ::before/::after) -->
+        <section class="features-section" id="features">
+            <div class="container">
+                <h3 class="section-title">Why CSS Pseudo-classes?</h3>
+                <div class="features-grid">
+                    <article class="feature-card">
+                        <h4 class="feature-title">Interactive</h4>
+                        <p class="feature-text">Respond to user actions like hover, focus, and click instantly.</p>
+                    </article>
+                    <article class="feature-card">
+                        <h4 class="feature-title">Structural</h4>
+                        <p class="feature-text">Select elements based on their position in the DOM tree.</p>
+                    </article>
+                    <article class="feature-card">
+                        <h4 class="feature-title">Validation</h4>
+                        <p class="feature-text">Style form elements based on their validity state automatically.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Blog/Typography (::first-letter, ::first-line) -->
+        <section class="blog-section" id="blog">
+            <div class="container">
+                <h3 class="section-title">Latest Updates</h3>
+                <article class="blog-post">
+                    <h4 class="post-title">The Art of CSS Typography</h4>
+                    <p class="post-content">
+                        CSS provides powerful tools for typography. The first letter of this paragraph is styled using a pseudo-element to create a drop-cap effect, adding a classic touch to the design. The first line is also distinct, drawing the reader's eye immediately to the content. These subtle touches make a significant difference in readability and aesthetic appeal.
+                    </p>
+                    <p>
+                        Beyond simple text styling, pseudo-elements allow us to insert content and style specific parts of an element without adding extra HTML markup. This keeps our code clean and semantic.
+                    </p>
+                </article>
+            </div>
+        </section>
+        
+        <!-- Section 4: Contact Form (Focus states) -->
+        <section class="contact-section" id="contact">
+            <div class="container">
+                <h3 class="section-title">Stay in Touch</h3>
+                <form class="contact-form" action="#" onsubmit="event.preventDefault()">
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email Address</label>
+                        <input type="email" id="email" class="form-input" placeholder="Enter your email" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Semantic Footer -->
+    <footer class="main-footer" id="footer">
+        <div class="container footer-content">
+            <p class="footer-text">&copy; 2024 CSS Fundamentals. All rights reserved.</p>
+            <ul class="social-links">
+                <li><a href="#" class="social-link" aria-label="Twitter">Twitter</a></li>
+                <li><a href="#" class="social-link" aria-label="GitHub">GitHub</a></li>
+                <li><a href="#" class="social-link" aria-label="LinkedIn">LinkedIn</a></li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+</html>
